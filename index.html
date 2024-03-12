@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página de Música</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript">
+        function muestraOculta(id) {
+         var elemento = document.getElementById('contenidos_'+id);
+         var enlace = document.getElementById('enlace_'+id);
+         if(elemento.style.display == "" || elemento.style.display == "block") {
+         elemento.style.display = "none";
+         enlace.innerHTML = 'Mostrar contenidos';
+         }
+         else {
+         elemento.style.display = "block";
+         enlace.innerHTML = 'Ocultar contenidos';
+         }
+        }
+</script>
+</head>
+<body>
+    <header id="main-header">
+		
+		<a id="logo-header" href="#">
+			<span class="site-name">RANGERS MUSIC</span> <br>
+			<span class="site-desc">Cualquier tipo de genero de musica</span>
+		</a> <!-- / #logo-header -->
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="acerca.html">Acerca de</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav><!-- / nav -->
+
+	</header><!-- / #main-header -->
+	<div class="content"></div>
+    <h1>Musicas disponibles</h1>
+    <a id="enlace_1" href="#" onclick="muestraOculta('1'); return false;" class="button">Ocultar musica</a>
+    <hum id="contenidos_1">
+    <p>Musica  
+        <div class="song">
+            <img src="portada1.jpg" alt="Portada del álbum">
+            <h3>Canción: Tú</h3>
+            <p>Artista:Maye </p>
+            <audio controls>
+                <source src="musica1.mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </div>
+    </p>
+</hum>
+<a id="enlace_2" href="#" onclick="muestraOculta('2'); return false;" class="button">Ocultar musica</a>
+<hum id="contenidos_2">
+<p>Musica  
+    <div class="song">
+
+        <h3>Canción Beethoven Virus - Version extendida</h3>
+        <p>Artista: Beethoven </p>
+        <iframe width="360" height="250" src="https://www.youtube.com/embed/DQZvySSvZLU?si=VLTmYXIzuS7aBJKF" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </audio>
+    </div>
+</p>
+</hum>
+<a id="enlace_3" href="#" onclick="muestraOculta('3'); return false;" class="button">Ocultar musica</a>
+<hum id="contenidos_3">
+<p>Musica  
+    <div class="song">
+        <img src="portada2.jpg" alt="Portada del álbum">
+        <h3>Canción: astronomy </h3>
+        <p>Artista: Conan gray </p>
+        <audio controls>
+            <source src="musica2.mp3" type="audio/mp3">
+            Tu navegador no soporta el elemento de audio.
+        </audio>
+    </div>
+</p>
+</hum>
+<a id="enlace_4" href="#" onclick="muestraOculta('4'); return false;" class="button">Ocultar musica</a>
+<hum id="contenidos_4">
+<p>Musica  
+    <div class="song">
+
+        <h3>Adrian Barba - Haruka (Version Full) Dragon Ball Super ED 9 - cover latino </h3>
+        <p>Artista: Adrian Barba</p>
+        <iframe width="360" height="250" src="https://www.youtube.com/embed/w88M8tBmWOs?si=esxdey7IaPIrUliS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </audio>
+    </div>
+</p>
+</hum>
+        <footer id="main-footer">
+            <p>&copy; 2024 <a href="http://elnoble.com">RangersMusic.com</a></p>
+        </footer> <!-- / #main-footer -->
+    
+</body>
+
+</html>
