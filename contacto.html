@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página de Música</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script type="text/javascript">
+        function muestraOculta(id) {
+         var elemento = document.getElementById('contenidos_'+id);
+         var enlace = document.getElementById('enlace_'+id);
+         if(elemento.style.display == "" || elemento.style.display == "block") {
+         elemento.style.display = "none";
+         enlace.innerHTML = 'Mostrar contenidos';
+         }
+         else {
+         elemento.style.display = "block";
+         enlace.innerHTML = 'Ocultar contenidos';
+         }
+        }
+</script>
+</head>
+<body>
+    <header id="main-header">
+		
+		<a id="logo-header" href="#">
+			<span class="site-name">RANGERS MUSIC</span> <br>
+			<span class="site-desc">Cualquier tipo de genero de musica</span>
+		</a> <!-- / #logo-header -->
+
+		<nav>
+			<ul>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="acerca.html">Acerca de</a></li>
+				<li><a href="contacto.html">Contacto</a></li>
+			</ul>
+		</nav><!-- / nav -->
+
+	</header><!-- / #main-header -->
+	<div class="content">
+        <h1>Como contactar con nosotros...</h1>
+    <p>
+        Si deseas colaborar con nosotros, promocionar tu música o simplemente tienes preguntas, no dudes en ponerte en contacto con el equipo de Rangers Music. Puedes enviarnos un correo electrónico a (dirección de correo electrónico) o visitar nuestra página web para obtener más información. También puedes seguirnos en nuestras redes sociales para mantenerte al tanto de las últimas noticias, lanzamientos y eventos musicales.
+    </p>
+    </div>
+
+        <footer id="main-footer">
+            <p>&copy; 2024 <a href="http://elnoble.com">RangersMusic.com</a></p>
+        </footer> <!-- / #main-footer -->
+    
+</body>
+
+</html>
